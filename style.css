@@ -1,0 +1,89 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    
+    
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* margin-bottom: 0%; */
+    ;
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    background-color: #FF6666;
+}
+.logo{
+    font-size: 2.5rem;
+    /* padding: 2%; */
+    /* margin-left: 10%; */
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    margin-left: 60%;
+    font-size: larger;
+    gap: 2rem;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+   
+    /* color: black; */
+}
+
+
+.home_page_container{
+    display: relative;
+    background-color:#FF6666;
+    
+}
+.background_overlay{
+    background-image: url('./assets/Hello-BG.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: .08;
+    transition:  .3s, border-radius .3s, opacity .3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    box-sizing: border-box;
+}
+.intro_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    /* font-size: 2rem; */
+}
+.intro{
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+.role_1{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bolder;
+    
+}

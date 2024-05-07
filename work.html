@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Work-Sakshi Laddha</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Belleza&display=swap'); 
+:root {
+	--cards: 6;
+	--cardHeight: 100vh;
+	--cardTopPadding: 0.5em;
+	/* --cardMargin: 0vw; */
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#cards {
+	/* list-style: none; */
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+	margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+	--index: 1;
+}
+#card2 {
+	--index: 2;
+}
+#card3 {
+	--index: 3;
+}
+#card4 {
+	--index: 4;
+}
+#card5{
+    --index: 5;
+}
+#card6{
+    --index: 6;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+/* #card1 .card-body {
+	background-color: #52B2CF;
+}
+#card2 .card-body {
+	
+	background-color: #E5A36F;
+}
+#card3 .card-body {
+	background-color: #9CADCE;
+}
+#card4 .card-body {
+	background-color: #D4AFB9;
+} */
+
+.card-body {
+    background-color:white;
+	box-sizing: border-box;
+	padding: 30px;
+	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+	height: var(--cardHeight);
+	display: flex;
+	
+	transition: all 0.5s;
+}
+
+    </style>
+<body>
+    <nav id="dekstop-nav" class="flex justify-between bg-lightYellow mt-[5%] sm:mt-0 sm:pt-5 sm:px-5">
+        <div class="font-charm  text-4xl">
+            <h1 class="cursor-pointer sm:text-6xl"><a href="./index.html">Sakshi Ladda</a></h1>
+        </div>
+            <ul class="flex gap-2 font-montserrat items-center text-white sm:text-2xl sm:gap-6">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./work.html">Work</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        
+        
+    </nav>
+
+    <!--Home-->
+    <section class="bg-lightYellow ">
+        <div class="flex flex-col text-center px-[10%] py-[35%] sm:py-[15%]">
+            <p class="font-playFair text-2xl font-bold opacity-75 sm:text-2xl">Explore My Work</p>
+            <h1 class="font-montserrat text-white text-4xl font-extrabold sm:text-8xl">Portfolio.</h1>
+        </div>
+    </section>
+
+    <!--Work-->
+    <section class="pb-10 ">
+        <div class="container">
+            <ul id="cards">
+                <!--Petals-->
+                <li class="card" id="card1">
+                    <div class="card-body flex flex-col h-full ">
+                        <h2 class="font-montserrat font-bold text-3xl text-center sm:text-6xl">Petals</h2>
+                        <div class="flex flex-col border shadow rounded-md sm:flex-row sm:justify-between sm:w-full sm:h-[90%] ">
+                            <div class="sm:w-1/2 sm:h-full sm:ml-8">
+                                <img src="./assets/Petals/petals_insta.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides">
+                                <img src="./assets/Petals/petals_facebook.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides">
+                                <img src="./assets/Untitled design (4).gif" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides">
+                            </div>
+                            
+                          <div class="sm:w-1/2 sm:items-center sm:justify-center sm:pt-10">
+                             <h1 class="font-montserrat font-bold border-b-2 border-black text-2xl text-center sm:text-4xl">
+                               Project Scope
+                             </h1>
+                             <p class="font-amarnath pl-5 sm:pl-10 sm:text-2xl sm:pt-3">
+                                Strategic Planning <br>Updated logo design <br>
+                                Social Media Management <br> Influencer Marketing <br>
+                               Meta Ads Campaigns  <br> Graphic Design
+                             </p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <!--Rasoi-->
+                <li class="card" id="card2">
+                    <div class="card-body flex flex-col sm:h-full">
+                        <h2 class="font-montserrat font-bold text-3xl text-center sm:text-6xl">Rasooi Ramzz
+                        </h2>
+                        <div class="flex flex-col border shadow rounded-md sm:flex-row sm:justify-between sm:w-full sm:h-[90%] ">
+                            <div class="sm:w-1/2 sm:h-full sm:ml-8">
+                                <img src="./assets/Rasoi_Content.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides5">
+                                <img src="./assets/Rasoi_Ramzz/visiting_card.jpeg" alt="" class="sm:object-fill  sm:h-full mySlides5">
+                                <img src="./assets/Rasoi_Ramzz/post.jpeg" alt="" class="sm:object-fill  sm:h-full mySlides5">
+                                <img src="./assets/Rasoi_Ramzz/Card.jpeg" alt="" class="sm:object-fill  sm:h-full mySlides5">
+                                <img src="./assets/Rasoi_Ramzz/logo.jpeg" alt="" class="sm:object-fill  sm:h-full mySlides5">
+                            </div>
+                            
+                          <div class="sm:w-1/2 sm:items-center sm:justify-center sm:pt-10">
+                             <h1 class="font-montserrat font-bold border-b-2 border-black text-2xl text-center sm:text-4xl">
+                               Project Scope
+                             </h1>
+                             <p class="font-amarnath pl-5 sm:pl-10 sm:text-2xl sm:pt-3">
+                                Strategic Planning <br> Brand Developemnt <br> Logo Design <br>
+                                Print and promotional collateral <br> Social Media Management <br>
+                                Meta Ads Campaigns <br> Graphic Design
+                             </p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <!--Elixr-->
+                <li class="card" id="card3">
+                    <div class="card-body flex flex-col sm:h-full">
+                        <h2 class="font-montserrat font-bold text-3xl text-center sm:text-6xl">Elixr by Shelly
+                        </h2>
+                        <div class="flex flex-col border shadow rounded-md sm:flex-row sm:justify-between sm:w-full sm:h-[90%] ">
+                            <div class="sm:w-1/2 sm:h-full sm:ml-8">
+                                <img src="./assets/Elixr/elxir_facebook.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides1">
+                                <img src="./assets/Elixr/Elixr_contetn.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides1 ">
+                                <img src="./assets/Elixr/Content_1.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides1">
+                                <img src="./assets/Elixr/WhatsApp Image 2024-04-28 at 11.20.07.jpeg" alt="" class="sm:object-fill  sm:h-full mySlides1">
+                                
+                            </div>
+                            
+                          <div class="sm:w-1/2 sm:items-center sm:justify-center sm:pt-10">
+                             <h1 class="font-montserrat font-bold border-b-2 border-black text-2xl text-center sm:text-4xl">
+                               Project Scope
+                             </h1>
+                             <p class="font-amarnath pl-5 sm:pl-10 sm:text-2xl sm:pt-3">
+                                Social Media Management <br> 
+                                Strategic Planning <br>Website Designing<br>
+                                Influencer Marketing <br>
+                                 Graphic Design 
+                             </p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <!--PropMark-->
+                <li class="card" id="card4">
+                    <div class="card-body flex flex-col sm:h-full">
+                        <h2 class="font-montserrat font-bold text-3xl text-center sm:text-6xl">PropMark Realty LLP
+                        </h2>
+                        <div class="flex flex-col border shadow rounded-md sm:flex-row sm:justify-between sm:w-full sm:h-[90%] ">
+                            <div class="sm:w-1/2 sm:h-full sm:ml-8">
+                                <img src="./assets/PropMark Reality/Content_2 (2).jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides3">
+                                <img src="./assets/PropMark Reality/Content_2 (1).jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides3">
+                                
+                                <img src="./assets/PropMark Reality/Content_2 (3).jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides3">
+                            </div>
+                            
+                          <div class="sm:w-1/2 sm:items-center sm:justify-center sm:pt-10">
+                             <h1 class="font-montserrat font-bold border-b-2 border-black text-2xl text-center sm:text-4xl">
+                               Project Scope
+                             </h1>
+                             <p class="font-amarnath pl-5 sm:pl-10 sm:text-2xl sm:pt-3">
+                                Content Creation <br>
+                                Social Media Management <br> 
+                                Meta Ads Campaigns <br> Google Ads Campaigns <br> Article Writing <br>
+                                YouTube Video Scripting
+                             </p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <!--Silpakarman-->
+                <li class="card" id="card5">
+                    <div class="card-body flex flex-col sm:h-full">
+                        <h2 class="font-montserrat font-bold text-3xl text-center sm:text-6xl">Silpakarman
+                        </h2>
+                        <div class="flex flex-col border shadow rounded-md sm:flex-row sm:justify-between sm:w-full sm:h-[90%] ">
+                            <div class="sm:w-1/2 sm:h-full sm:ml-8">
+                                <img src="./assets/Silpakarman/Silpakarman.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides2">
+                                <img src="./assets/Silpakarman/Silpakarman_2.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides2">
+                                <img src="./assets/Silpakarman/Silpakarman_content.png" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides2">
+                                <img src="./assets/Silpakarman/blog_1.jpg" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides2">
+                                <img src="./assets/Silpakarman/blog_2.jpg" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides2">
+                                <img src="./assets/Silpakarman/Silpkarman_ad_result.jpeg" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides2">
+                            </div>
+                            
+                          <div class="sm:w-1/2 sm:items-center sm:justify-center sm:pt-10">
+                             <h1 class="font-montserrat font-bold border-b-2 border-black text-2xl text-center sm:text-4xl">
+                               Project Scope
+                             </h1>
+                             <p class="font-amarnath pl-5 sm:pl-10 sm:text-2xl sm:pt-3">
+                                Content Creation <br> Blog Writing <br> Newsletter Writng <br>
+                                Social Media Management <br> Influencer Marketing <br>
+                                Meta Ads Campaigns <br> Media Report <br>YouTube Scripting
+                             </p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <!--Ruaarth-->
+                <li class="card" id="card5">
+                    <div class="card-body flex flex-col sm:h-full">
+                        <h2 class="font-montserrat font-bold text-3xl text-center sm:text-6xl">Ruaarth Jewellery
+                        </h2>
+                        <div class="flex flex-col border shadow rounded-md sm:flex-row sm:justify-between sm:w-full sm:h-[90%] ">
+                            <div class="sm:w-1/2 sm:h-full sm:ml-8">
+                                <img src="./assets/Ruaarth/Ruaarth Jewels.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides4 ">
+                                <img src="./assets/Ruaarth/Ruaart_content.png" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides4 ">
+                                <img src="./assets/Ruaarth/Contetnt_2.png" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides4">
+                                <img src="./assets/Ruaarth/Ruaart_social_mediapng.png" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides4">
+                            </div>
+                            
+                          <div class="sm:w-1/2 sm:items-center sm:justify-center sm:pt-10">
+                             <h1 class="font-montserrat font-bold border-b-2 border-black text-2xl text-center sm:text-4xl">
+                               Project Scope
+                             </h1>
+                             <p class="font-amarnath pl-5 sm:pl-10 sm:text-2xl sm:pt-3">
+                                Strategic Planning <br> Content Writing<br>
+                                Content Creation <br>
+                                Social Media Management <br> Media Report <br>
+                                Meta Ads Campaigns <br> 
+                             </p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--Some worthy posts-->
+
+    <section class="bg-white">
+        <div>
+            <h1 class="font-montserrat font-bold text-4xl text-center sm:text-6xl">Some Worthy Social Media </h1>
+        </div>
+        <div class="flex flex-col sm:grid sm:grid-cols-3 ">
+            <div>
+                <img src="./assets/output-onlinegiftools.gif" alt="">
+            </div>
+            <div>
+                <img src="./assets/Nanostuff_content.jpeg" alt="">
+            </div>
+            <div>
+                <img src="./assets/Olive/Olive_contetn.jpeg" alt="">
+            </div>
+            <div>
+                <img src="./assets/her_safarnama.gif" alt="">
+            </div>
+            <div>
+                <img src="./assets/BRandBunny_content.jpeg" alt="">
+            </div>
+            <div>
+                <img src="./assets/output-onlinegiftools (1).gif" alt="">
+            </div>
+            <div>
+                <img src="./assets/Flab2fitcontent.png" alt="">
+            </div>
+            <div>
+                <img src="./assets/Fizdio/fizido_content.png" alt="">
+            </div>
+            <div>
+                <img src="./assets/PMPL/PMPL.png" alt="">
+            </div>
+            <!-- <div>
+               <video src="./assets/Fizdio/Content_1.mp4"></video>
+            </div> -->
+    
+        </div>
+        
+       
+    </section>
+
+    <div class="flex flex-col sm:flex-row ">
+        <footer class=" w-full  bg-lightYellow  relative p-10 sm:w-3/5  " >        
+                    
+            <div class="flex flex-col justify-between">
+                <h1 class="font-montserrat font-extrabold text-4xl "><a href="./index.html">
+                    Sakshi Ladda.</a></h1>
+                <p class="font-montserrat text-2xl">Let's Get Creative</p>
+            </div>
+        
+        <div class="flex gap-10">
+            <div class="flex text-center">
+                <i class="fa fa-map-marker"></i>
+                <p class="font-montserrat">Raisoni Park, Pune 37</p>
+            </div>
+            
+            <!-- <p>Made with <i class="fa fa-heart"></i></p><br> -->
+            <p class="font-montserrat ">Copyright &#169; 2024 Sakshi Ladda. All Rights Reserved</p>
+        </div>
+       
+    </footer>
+    <footer class="  bg-lightRed  relative p-10 py-12 sm:w-2/5 " >        
+                    
+        <div>
+            <h1 class="font-montserrat text-2xl font-semibold">Keep in Touch</h1>
+            <ul class="flex gap-4 items-center py-4">
+                <li><a href="mailto:laddasakshi64@gmail.com"><img src="./assets/email.png" alt="" class="w-12 h-12 hover:scale-125"></a></li>
+                <li><a href="http://www.linkedin.com/in/sakshi-ladda-045022157"><img src="./assets/linkedin.png" alt="" class="w-10 h-10 hover:scale-125"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100006693105942"><img src="./assets/facebook_logo.png" alt="" class="w-11 h-11 hover:scale-125"></a></li>
+                <li><a href="https://www.instagram.com/saakshiladda/"><img src="./assets/insta_icon.png" alt="" class="w-11 h-11 hover:scale-125"></a></li>
+               
+                    
+            </ul>
+        </div>
+       
+    
+    
+   
+</footer>
+    </div>
+    
+
+    <script>
+
+var slideIndex = 1;
+
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+carousel();
+
+
+var slideIndex1 = 1;
+
+
+function carousel1() {
+  var i;
+  var y = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < y.length; i++) {
+    y[i].style.display = "none";
+  }
+  slideIndex1++;
+  if (slideIndex1 > y.length) {slideIndex1 = 1}
+  y[slideIndex1-1].style.display = "block";
+  setTimeout(carousel1, 1000); // Change image every 2 seconds
+}
+carousel1();
+
+
+var slideIndex2 = 1;
+
+
+function carousel2() {
+  var i;
+  var z = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < z.length; i++) {
+    z[i].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > z.length) {slideIndex2 = 1}
+  z[slideIndex2-1].style.display = "block";
+  setTimeout(carousel2, 1000); // Change image every 2 seconds
+}
+carousel2();
+
+
+var slideIndex3 = 1;
+
+
+function carousel3() {
+  var i;
+  var a = document.getElementsByClassName("mySlides3");
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = "none";
+  }
+  slideIndex3++;
+  if (slideIndex3 > a.length) {slideIndex3 = 1}
+  a[slideIndex3-1].style.display = "block";
+  setTimeout(carousel3, 1000); // Change image every 2 seconds
+}
+carousel3();
+
+
+
+var slideIndex4 = 1;
+
+
+function carousel4() {
+  var i;
+  var b = document.getElementsByClassName("mySlides4");
+  for (i = 0; i < b.length; i++) {
+    b[i].style.display = "none";
+  }
+  slideIndex4++;
+  if (slideIndex4 > b.length) {slideIndex4 = 1}
+  b[slideIndex4-1].style.display = "block";
+  setTimeout(carousel4, 1000); // Change image every 2 seconds
+}
+carousel4();
+
+var slideIndex5 = 1;
+
+
+function carousel5() {
+  var i;
+  var c = document.getElementsByClassName("mySlides5");
+  for (i = 0; i < c.length; i++) {
+    c[i].style.display = "none";
+  }
+  slideIndex5++;
+  if (slideIndex5 > c.length) {slideIndex5 = 1}
+  c[slideIndex5-1].style.display = "block";
+  setTimeout(carousel5, 1000); // Change image every 2 seconds
+}
+carousel5();
+
+
+    </script>
+
+</body>
+</html>

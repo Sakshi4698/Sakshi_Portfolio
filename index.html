@@ -9,7 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+     <script src="https://cdn.tailwindcss.com"></script>
+
+     <script>
+        tailwind.config={
+           
+  content: ["*"],
+  theme: {
+    extend: {
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        playFair:["Playfair Display", "serif"],
+        amarnath:["Amaranth", "sans-serif"],
+        charm:[ "Belleza", "sans-serif"],
+    },
+    colors: {
+      lightRed: "#FF6666",
+      lightYellow:"#FFD324",
+      lightPurple:"#6F77F4",
+      lightishGray:"#D8D8D8",
+      charcDisplay:"#3A3A3A",
+    },
+   animation: {
+      'infinite-scroll': 'infinite-scroll 25s linear infinite',
+  },
+    keyframes: {
+      'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+      }
+  }                    
+},
+  },
+  plugins: [],
+}
+
+
+
+     </script>
     <!-- <script src="https://unpkg.com/feather-icons"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>

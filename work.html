@@ -330,12 +330,12 @@
                         </h2>
                         <div class="flex flex-col border shadow rounded-md sm:flex-row sm:justify-between sm:w-full sm:h-[90%] ">
                             <div class="sm:w-1/2 sm:h-full sm:ml-8">
-                                <img src="./assets/Silpakarman/Silpakarman.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides2">
-                                <img src="./assets/Silpakarman/Silpakarman_2.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides2">
-                                <img src="./assets/Silpakarman/Silpakarman_content.png" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides2">
-                                <img src="./assets/Silpakarman/blog_1.jpg" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides2">
-                                <img src="./assets/Silpakarman/blog_2.jpg" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides2">
-                                <img src="./assets/Silpakarman/Silpkarman_ad_result.jpeg" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides2">
+                                <img src="./assets/Silpakarman/Silpakarman.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides5">
+                                <img src="./assets/Silpakarman/Silpakarman_2.jpeg" alt="" loading="lazy" class="sm:object-fill  sm:h-full mySlides5">
+                                <img src="./assets/Silpakarman/Silpakarman_content.png" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides5">
+                                <img src="./assets/Silpakarman/blog_1.jpg" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides5">
+                                <img src="./assets/Silpakarman/blog_2.jpg" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides5">
+                                <img src="./assets/Silpakarman/Silpkarman_ad_result.jpeg" alt="" loading="lazy" class="sm:object-fill justify-center items-center sm:h-full mySlides5">
                             </div>
                             
                           <div class="sm:w-1/2 sm:items-center sm:justify-center sm:pt-10">
@@ -359,7 +359,7 @@
 
     <section class="bg-white">
         <div>
-            <h1 class="font-josefin font-bold text-4xl text-center sm:text-6xl">Some Worthy Social Media </h1>
+            <h1 class="font-josefin font-bold text-4xl text-center sm:text-6xl">Some Noteworthy Work </h1>
         </div>
         <div class="flex flex-col sm:grid sm:grid-cols-3 ">
             <div>
@@ -541,6 +541,22 @@ function carousel5() {
   setTimeout(carousel5, 1000); // Change image every 2 seconds
 }
 carousel5();
+
+var slideIndex6 = 6;
+
+
+function carousel6() {
+  var i;
+  var c = document.getElementsByClassName("mySlides6");
+  for (i = 0; i < c.length; i++) {
+    c[i].style.display = "none";
+  }
+  slideIndex6++;
+  if (slideIndex6 > c.length) {slideIndex6 = 1}
+  c[slideIndex6-1].style.display = "block";
+  setTimeout(carousel6, 1000); // Change image every 2 seconds
+}
+carousel6();
 
 
     </script>

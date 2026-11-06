@@ -4,8 +4,10 @@
   "description": "sakshi portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "vite"
+    "start": "vite",
+    "build:css": "tailwindcss -i ./main.css -o ./utilities.css --minify",
+    "build": "npm run build:css && vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
